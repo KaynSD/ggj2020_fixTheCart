@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta content='width=device-width, initial-scale=1, maximum-scale=1 user-scalable=0' name='viewport'>
+  <title>AirConsole Controller</title>
+  <link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+  <!-- AirConsole-Controls -->
+  <link rel="stylesheet" type="text/css" href="airconsole-controls/button/button.css">
+  <link rel="stylesheet" type="text/css" href="airconsole-controls/dpad/dpad.css">
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="controller/styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="controller/styles/controls.css">
+  
+
+  <!-- 3rd Party Libs -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="controller/libs/handlebars-v4.0.5.js"></script>
+  <!-- AIRCONSOLE -->
+  <script type="text/javascript" src="https://www.airconsole.com/api/airconsole-latest.js"></script>
+  <script type="text/javascript" src="controller/libs/airconsole_view_manager.js"></script>
+  <!-- AIRCONSOLE CONTROLS -->
+  <script type="text/javascript" src="airconsole-controls/button/button.js"></script>
+  <script type="text/javascript" src="airconsole-controls/dpad/dpad.js"></script>
+  <script type="text/javascript" src="airconsole-controls/swipe-analog/swipe-analog.js"></script>
+  <script type="text/javascript" src="airconsole-controls/swipe-digital/swipe-digital.js"></script>
+  <!-- GENERATOR -->
+  <script type="text/javascript" src="controller/js/controller_generator.js"></script>
+  <script type="text/javascript" src="controller/js/main.js"></script>
+
+</head>
+<body>
+
+  <div id="controller-container">
+
+	<!-- REPLACE_HERE START -->
+
+	<div id="view-0" class="view" style="display: flex;">
+		<div id="view-0-section-0" class="section " style="height: 100%;">
+			<div id="startGame" class="button-300-300 button-element element">
+				<div class="button-text">Start Game</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="view-1" class="view" style="display: none;">
+		<div id="view-1-section-0" class="section " style="height: 100%;">
+			<div id="move" class="dpad-absolute-container">
+				<div class="dpad-absolute" style="position: static;">
+					<div class="dpad-arrow dpad-arrow-up"></div>
+					<div class="dpad-arrow dpad-arrow-down"></div>
+					<div class="dpad-arrow dpad-arrow-left"></div>
+					<div class="dpad-arrow dpad-arrow-right"></div>
+				</div>
+			</div>
+		</div>
+
+		<div id="view-1-section-1" class="section horizontal " style="height: 100%;">
+			<div id="hit" class="button-150-300 button-element element">
+				<div class="button-text">Hit</div>
+			</div>
+			<div id="grab" class="button-150-300 button-element element">
+				<div class="button-text">Grab</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="view-2" class="view" style="display: none;">
+		<div id="view-2-section-0" class="section " style="height: 100%;">
+			<div id="wait" class=" button-element element">
+				<div class="button-text">Wait...</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="view-3" class="view" style="display: none;">
+		<div id="view-3-section-0" class="section " style="height: 100%;">
+			<div id="tap" class="button-300-300 button-element element">
+				<div class="button-text">Tap As Fast As You Can!</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+	var ctrl_data = '{"orientation":"landscape","selected_view_id":"view-0","views":[{"id":"view-0","sections":[{"id":"view-0-section-0","elements":[{"id":"startGame","key":"button","name":"Button","tmpl":"button","constructor_fn":"ButtonElement","options":{"constructor_args":{},"attr_id":"view-0-section-0-element-0","css_classes":"button-300-300","view_action":{"target":null,"view_id":null},"label":"Start Game","send_onrelease":false,"message_data":[]}}],"classes":[]}]},{"id":"view-1","sections":[{"id":"view-1-section-0","elements":[{"id":"move","key":"dpad_absolute","name":"DPad Absolute","tmpl":"dpad","constructor_fn":"DPadAbsoluteElement","options":{"constructor_args":{"diagonal":true},"attr_id":"view-1-section-0-element-0","css_classes":"","view_action":{"target":null,"view_id":null}}}],"classes":[]},{"id":"view-1-section-1","elements":[{"id":"hit","key":"button","name":"Button","tmpl":"button","constructor_fn":"ButtonElement","options":{"constructor_args":{},"attr_id":"view-1-section-1-element-0","css_classes":"button-150-300","view_action":{"target":null,"view_id":null},"label":"Hit","send_onrelease":true,"message_data":[]}},{"id":"grab","key":"button","name":"Button","tmpl":"button","constructor_fn":"ButtonElement","options":{"constructor_args":{},"attr_id":"view-1-section-1-element-1","css_classes":"button-150-300","view_action":{"target":null,"view_id":null},"label":"Grab","send_onrelease":true,"message_data":[]}}],"classes":["horizontal"]}]},{"id":"view-2","sections":[{"id":"view-2-section-0","elements":[{"id":"wait","key":"button","name":"Button","tmpl":"button","constructor_fn":"ButtonElement","options":{"constructor_args":{},"attr_id":"view-2-section-0-element-0","css_classes":"","view_action":{"target":null,"view_id":null},"label":"Wait...","send_onrelease":false,"message_data":[]}}],"classes":[]}]},{"id":"view-3","sections":[{"id":"view-3-section-0","elements":[{"id":"tap","key":"button","name":"Button","tmpl":"button","constructor_fn":"ButtonElement","options":{"constructor_args":{},"attr_id":"view-3-section-0-element-0","css_classes":"button-300-300","view_action":{"target":null,"view_id":null},"label":"Tap As Fast As You Can!","send_onrelease":false,"message_data":[]}}],"classes":[]}]}]}';
+	</script>  
+  
+
+    <!-- REPLACE_HERE END -->
+
+  </div>
+</body>
+</html>
